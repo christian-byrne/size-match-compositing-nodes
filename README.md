@@ -1,5 +1,4 @@
 
-
 # *Node* - Size Matcher
 
 Takes two images and matches their sizes using various methods, detailed below.
@@ -159,3 +158,13 @@ Takes two images and matches their sizes using various methods, detailed below.
 >
 >
 > </details>
+
+
+# Installation
+
+1. `cd` into `ComfyUI/custom_nodes`
+2. `git clone` this repo
+
+# Requirements
+
+- Python3.10+
