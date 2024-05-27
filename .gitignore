@@ -1,0 +1,72 @@
+test-images
+.python-version
+infer_alpha_node.py
+
+# Ignore temporary files with various extensions
+**/notes.*
+**/temp.*
+# Vim swap files
+**/*.swp       
+**/*.bak
+# Backup files (Emacs)
+**/*~          
+
+# Ignore build files
+**/build/
+**/dist/
+**/target/
+**/out/
+**/__pycache__/
+__pycache__
+__pycache__/
+/__pycache__
+**/.mypy_cache/
+**/.pytest_cache/
+**/.tox/
+**/.next/
+**/.pytest_cache/
+**/.coverage
+# Python egg-info directories
+**/*.egg-info/  
+# Python egg files
+**/*.egg        
+# Log files
+**/*.log        
+# Compiled Python bytecode files
+**/*.pyc        
+
+# Ignore workspace/IDE files
+**/.vscode/
+**/.idea/
+**/.vs/
+**/.suo
+**/.ntvs_analysis.dat
+**/.ntvs_test_results.dat
+**/.mypy_cache/
+
+# Ignore dependencies
+**/node_modules/
+venv/
+.virtualenv
+.venv*/    
+
+
+# Ignore secrets and passwords
+**/.secrets
+**/.secrets.*
+**/secrets.*
+**/secrets
+# Key files
+**/*.key      
+# PEM files
+**/*.pem      
+# Certificate files
+**/*.crt      
+# Certificate files
+**/*.cer      
+
+# Ignore environment variables
+**/.env
+**/.env.*
+**/env.*
+.ENV
