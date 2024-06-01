@@ -1,0 +1,15 @@
+[project]
+name = "size-match-compositing-nodes"
+description = "Match image/mask sizes with various methods. Composite images/masks and cutouts (alpha layers)."
+version = "1.0.1"
+license = "LICENSE"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/christian-byrne/size-match-compositing-nodes"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "christian-byrne"
+DisplayName = "size-match-compositing-nodes"
+Icon = ""

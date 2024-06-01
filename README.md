@@ -5,7 +5,7 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 ## cover_crop_center
 
-> Expand the smaller image to cover the larger image without changing the aspect ratio. Then center it and crop the edges to match the size of the larger image.
+> Expand the smaller image to cover the larger image without changing the aspect ratio. Then center it. Then crop any overflowing edges until sizes match.
 > 
 > <details>
 > <summary> &nbsp; Expand </summary>
@@ -17,7 +17,7 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 ## cover_crop
 
-> Expand the smaller image to cover the larger image without changing the aspect ratio. Then crop the edges to match the size of the larger image.
+> Same as `cover_crop_center` but without centering the smaller after resizing.
 >
 > 
 > <details>
@@ -30,7 +30,7 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 ## fit_center
 
-> Expand the smaller image as much as possible to fit inside the larger image without changing the aspect ratio. Then center it.
+> Expand the smaller image as much as possible to fit inside the larger image without changing the aspect ratio. Then center it. Then pad any remaining space until sizes match.
 >
 > 
 > <details>
@@ -43,7 +43,7 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 ## center_dont_resize
 
-> Center the smaller image inside the larger image without changing either sizes.
+> Center the smaller image inside the larger image without changing either sizes. Then pad the smaller image until sizes match.
 >
 > 
 > <details>
@@ -56,7 +56,7 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 ## fill
 
-> Expand the smaller image to exactly match the size of the larger image, allowing the aspect ratio to change.
+> Expand the smaller image to exactly match the size of the larger image, allowing the aspect ratio to change
 >
 > 
 > <details>
@@ -69,7 +69,7 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 ## crop_larger_center
 
-> Crop the larger image to match the size of the smaller image. Then center it.
+> Center the smaller image on the larger image. Then crop the larger image to match the size of the smaller image
 >
 > 
 > <details>
@@ -82,7 +82,7 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 ## crop_larger_topleft
 
-> Crop the larger image to match the size of the smaller image. Then align it to the top-left corner.
+> Same as `crop_larger_center` but crops the larger image from the top left corner (skip centering)
 > 
 > <details>
 > <summary>&nbsp; Expand </summary>
@@ -98,10 +98,10 @@ Takes two images and matches their sizes using various methods, detailed below.
 
 # *Node* - Paste Cutout on Base Image (Compositing)
 
-
-- Automatically matches size of two images with various size matching methods
+- Composites two images together
+- Automatically matches size of the images with various size matching methods (if necessary)
 - If the cutout doesn't have an alpha channel (not really a cutout), the bg is automatically inferred and made transparent
-- Invert option
+- `invert` option
 
 
 
