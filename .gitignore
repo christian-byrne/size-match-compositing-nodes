@@ -2,6 +2,7 @@ test-images
 .python-version
 infer_alpha_node.py
 todo.md
+extensions_list.py
 
 # Ignore temporary files with various extensions
 **/notes.*

@@ -1,9 +1,3 @@
-"""
-Method signatures automatically generated
-
-pyenv local 3.10.6
-"""
-
 import torch
 from typing import Tuple
 
@@ -19,7 +13,6 @@ class ChromaKey:
         if alpha.sum() > 0.5 * alpha.numel() and alpha.sum() < 0.85 * alpha.numel():
             return True  # Inference successful
 
-        
         if self.closest is None or (
             abs(alpha.sum() - alpha.numel() * 0.5)
             < abs(self.closest.sum() - self.closest.numel() * 0.5)

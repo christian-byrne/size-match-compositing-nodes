@@ -35,7 +35,7 @@ class TensorImgUtils:
             from_type = ["B"] + from_type
 
         return TensorImgUtils.from_to(from_type, list(to_type))(tensor)
-    
+
     @staticmethod
     def infer_hw_axis(image: torch.Tensor) -> Tuple[int, int]:
         tensor_type = TensorImgUtils.identify_type(image)[1]
@@ -138,4 +138,3 @@ class TensorImgUtils:
             for img in img_tensors
         ]
         return img_tensors[sizes.index(max(sizes))]
-

@@ -1,7 +1,7 @@
 [project]
 name = "size-match-compositing-nodes"
-description = "Match image/mask sizes with various methods. Composite images/masks and cutouts (alpha layers)."
-version = "1.0.1"
+description = "Match image/mask sizes with various methods. Paste images/masks on top of eachother."
+version = "1.0.2"
 license = "LICENSE"
 dependencies = []
 
@@ -11,5 +11,5 @@ Repository = "https://github.com/christian-byrne/size-match-compositing-nodes"
 
 [tool.comfy]
 PublisherId = "christian-byrne"
-DisplayName = "size-match-compositing-nodes"
-Icon = ""
+DisplayName = "Image/Mask Size Matching and Simple Compositing"
+Icon = "https://img.icons8.com/?size=100&id=46251&format=png&color=000000"
