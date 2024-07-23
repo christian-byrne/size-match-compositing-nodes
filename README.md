@@ -1,7 +1,7 @@
 
 # *Node* - Size Matcher
 
-Takes two images and matches their sizes using various methods, detailed below.
+Takes two images or masks and matches their sizes using various methods, detailed below. Inlcudes a node to smart-composite (auto match sizes first then composite)
 
 ## cover_crop_center
 
