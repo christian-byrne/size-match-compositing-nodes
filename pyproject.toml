@@ -1,9 +1,9 @@
 [project]
 name = "size-match-compositing-nodes"
-description = "Match image/mask sizes with various methods. Paste images/masks on top of eachother."
-version = "1.0.2"
-license = "LICENSE"
-dependencies = []
+description = "Match image/mask sizes"
+version = "1.1.0"
+license = "UNLICENSE"
+dependencies = ["TensorImgUtils"]
 
 [project.urls]
 Repository = "https://github.com/christian-byrne/size-match-compositing-nodes"

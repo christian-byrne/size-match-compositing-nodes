@@ -1,6 +1,6 @@
 import torch
 from torchvision import transforms
-from ..utils.tensor_utils import TensorImgUtils
+from tensor_img_utils import TensorImgUtils
 
 
 class ImageScaler:

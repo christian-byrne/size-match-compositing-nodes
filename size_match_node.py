@@ -6,7 +6,7 @@ import sys
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from .utils.equalize_size import SizeMatcher
-from .utils.tensor_utils import TensorImgUtils
+from tensor_img_utils import TensorImgUtils
 
 
 class SizeMatchNode:
@@ -14,6 +14,8 @@ class SizeMatchNode:
     RETURN_TYPES = (
         "IMAGE",
         "IMAGE",
+        "MASK",
+        "MASK",
     )
     FUNCTION = "main"
 
@@ -55,14 +57,23 @@ class SizeMatchNode:
             for tensor in [image_1, image_2, mask_1, mask_2]
             if tensor is not None
         ]
+        input_indices = [
+            i for i, tensor in enumerate([image_1, image_2, mask_1, mask_2]) if tensor is not None
+        ]
         image_1, image_2 = inputs[:2]
 
-        # Expand masks
+        input_types = []
         if image_1.dim() == 3:
             image_1 = image_1.unsqueeze(-1)
+            input_types.append("MASK")
+        else:
+            input_types.append("IMAGE")
         if image_2.dim() == 3:
             image_2 = image_2.unsqueeze(-1)
-
+            input_types.append("MASK")
+        else:
+            input_types.append("IMAGE")
+        
         image_1 = TensorImgUtils.convert_to_type(image_1, "BCHW")
         image_2 = TensorImgUtils.convert_to_type(image_2, "BCHW")
 
@@ -80,7 +91,22 @@ class SizeMatchNode:
         else:
             result = SizeMatcher().size_match_by_method_str(image_1, image_2, method)
 
-        return (
+        result= [
             TensorImgUtils.convert_to_type(result[0], "BHWC"),
             TensorImgUtils.convert_to_type(result[1], "BHWC"),
-        )
+        ]
+        if input_types[0] == "MASK":
+            result[0] = result[0].squeeze(-1)
+        if input_types[1] == "MASK":
+            result[1] = result[1].squeeze(-1)
+
+        res = []
+        for i in range(4):
+            if i in input_indices:
+                res.append(result.pop(0))
+            elif i <= 1:
+                res.append(torch.rand(1, 64, 64, 3))
+            else:
+                res.append(torch.rand(1, 64, 64))
+        
+        return tuple(res)

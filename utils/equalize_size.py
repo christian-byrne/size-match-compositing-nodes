@@ -2,7 +2,7 @@ import torch
 from torchvision import transforms
 from typing import Tuple
 
-from ..utils.tensor_utils import TensorImgUtils
+from tensor_img_utils import TensorImgUtils
 from ..utils.scale import ImageScaler
 
 
@@ -213,13 +213,10 @@ class SizeMatcher:
         """
         h1, w1 = TensorImgUtils.height_width(image_1)
         h2, w2 = TensorImgUtils.height_width(image_2)
-        print(f"h1: {h1}, w1: {w1}")
         # If both sides are not larger, revert to cover_maintain
         if h1 * w1 > h2 * w2:
             if h1 < h2 or w1 < w2:
-                print("h1 < h2 or w1 < w2")
                 return self.cover_maintain(image_1, image_2)
-            print("h1 >= h2 and w1 >= w2")
             image_1 = self.crop_to_match(image_1, (h2, w2), center=center)
         else:
             if h2 < h1 or w2 < w1:
