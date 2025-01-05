@@ -1,7 +1,7 @@
 [project]
 name = "size-match-compositing-nodes"
 description = "Match image/mask sizes"
-version = "1.1.0"
+version = "1.1.1"
 license = "UNLICENSE"
 dependencies = ["TensorImgUtils"]
 

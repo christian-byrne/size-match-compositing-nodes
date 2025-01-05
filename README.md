@@ -11,7 +11,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 > <summary> &nbsp; Expand </summary>
 >
 > 
-> ![alt text](wiki/demo/size-match/cover-crop-center.png)
+> ![alt text](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/size-match/cover-crop-center.png?raw=true)
 >
 > </details>
 
@@ -24,7 +24,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 > <summary>&nbsp; Expand </summary>
 >
 > 
-> ![alt text](wiki/demo/size-match/cover-crop.png)
+> ![alt text](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/size-match/cover-crop.png?raw=true)
 >
 > </details>
 
@@ -50,7 +50,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 > <summary>&nbsp; Expand </summary>
 >
 > 
-> ![alt text](wiki/demo/size-match/center-dont-resize.png)
+> ![alt text](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/size-match/center-dont-resize.png?raw=true)
 >
 > </details>
 
@@ -63,7 +63,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 > <summary>&nbsp; Expand </summary>
 >
 > 
-> ![alt text](wiki/demo/size-match/fill.png)
+> ![alt text](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/size-match/fill.png?raw=true)
 >
 > </details>
 
@@ -76,7 +76,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 > <summary>&nbsp; Expand </summary>
 >
 > 
-> ![alt text](wiki/demo/size-match/crop-larger-center.png)
+> ![alt text](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/size-match/crop-larger-center.png?raw=true)
 >
 > </details>
 
@@ -112,7 +112,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 > <summary>&nbsp; Expand </summary>
 >
 > 
-> ![paste-cutout](wiki/demo/composite/paste-cutout.png)
+> ![paste-cutout](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/composite/paste-cutout.png?raw=true)
 >
 > </details>
 
@@ -127,7 +127,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 >
 > 
 >
-> ![inferred-bg](wiki/demo/composite/inferred-bg.png)
+> ![inferred-bg](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/composite/inferred-bg.png?raw=true)
 > 
 >
 > </details>
@@ -140,7 +140,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 >
 > 
 >
-> ![with-auto-segmentation](wiki/demo/composite/with-auto-segmentation.png)
+> ![with-auto-segmentation](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/composite/with-auto-segmentation.png?raw=true)
 >
 >
 > </details>
@@ -154,7 +154,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 >
 > 
 > 
-> ![with-chromakeying](wiki/demo/composite/with-chromakeying.png)
+> ![with-chromakeying](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/composite/with-chromakeying.png?raw=true)
 >
 >
 > </details>
