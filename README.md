@@ -89,7 +89,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 >
 > 
 >
-> ![alt text](wiki/demo/size-match/crop-larger-topleft.png)
+> ![alt text](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/size-match/crop-larger-topleft.png?raw=true)
 >
 > </details>
 >
