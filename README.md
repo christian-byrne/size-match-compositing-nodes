@@ -37,7 +37,7 @@ Takes two images or masks and matches their sizes using various methods, detaile
 > <summary>&nbsp; Expand </summary>
 >
 > 
-> ![alt text](wiki/demo/size-match/fit-center.png)
+> ![alt text](https://github.com/christian-byrne/size-match-compositing-nodes/blob/demo-files/wiki/demo/size-match/fit-center.png?raw=true)
 >
 > </details>
 
